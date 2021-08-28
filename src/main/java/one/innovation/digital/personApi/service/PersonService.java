@@ -17,6 +17,7 @@ public class PersonService {
     }
 
     public static MessageResponseDTO createPerson(Person person) {
+
         Person savedPerson = personRepository.save(person);
         return MessageResponseDTO
                 .builder()
